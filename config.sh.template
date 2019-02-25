@@ -1,0 +1,17 @@
+# usage
+# 1) cp config.sh.template config.sh
+# 2) adjust data according to your system
+
+JAR_VERSION=0.6-SNAPSHOT
+JAR=/path/to/europeana-qa-spark-${JAR_VERSION}-jar-with-dependencies.jar
+SPARK_DIR=
+
+# HDFS directories
+HDFS_BASE_URL=hdfs://localhost:9000/europeana
+HDFS_GZ_DIR=${HDFS_BASE_URL}/gz
+HDFS_JS_DIR=${HDFS_BASE_URL}/js
+
+# FS directories
+FS_BASE_DIR=.
+FS_GZ_DIR=${FS_BASE_DIR}/gz
+FS_JS_DIR=${FS_BASE_DIR}/json
